@@ -1,0 +1,194 @@
+2026-05-03 13:02:50,276 HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-03 13:02:56,242 Post publicado para https://pcyredes.com/blog/5-senales-externalizar-soporte-it: urn:li:share:7456659551371706368
+2026-05-03 13:30:57,991 HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-03 13:31:01,827 Post publicado para https://pcyredes.com/blog/seguridad-copias-backup-virtualizacion-windows-server: urn:li:share:7456666624742297600
+/Users/jorgevega/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+2026-05-05 10:30:11,917 HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-05 10:30:15,727 Post publicado para https://pcyredes.com/blog/office-365-copilot-ia-empresas-2026: urn:li:share:7457345908465340417
+=== PCyRedes LinkedIn Bot ===
+
+Nuevo post: Office 365 copilot ia empresas 2026
+URL: https://pcyredes.com/blog/office-365-copilot-ia-empresas-2026
+
+La mayoría de empresas ya pagan por Copilot en Microsoft 365 sin saberlo — y no lo están usando.
+
+Desde 2025, Microsoft está integrando capacidades de IA directamente en los planes de Microsoft 365 para empresas. Ignorarlo tiene un coste real: tiempo perdido en tareas que ya se pueden automatizar.
+
+Lo que Copilot puede hacer hoy en tu empresa:
+
+→ Resumir hilos de correo largos en segundos, sin leer cada mensaje
+→ Generar borradores de informes o propuestas a partir de datos que ya tienes en OneDrive o SharePoint
+→ Transcribir y resumir reuniones de Teams automáticamente, con puntos de acción incluidos
+→ Analizar hojas de Excel complejas con lenguaje natural, sin fórmulas avanzadas
+
+Lo importante no es la tecnología en sí. Es saber qué procesos de tu empresa se benefician más de aplicarla desde el primer día.
+
+En 2026, la diferencia entre pymes competitivas y las que se quedan atrás no será el presupuesto IT — será si saben sacar partido a las herramientas que ya tienen contratadas.
+
+¿Tu equipo ya usa Copilot en el día a día, o todavía está sin explorar?
+
+🔗 pcyredes.com
+
+#MicrosoftCopilot #TransformaciónDigital #GestiónIT #PymesEspaña
+
+✓ Publicado: urn:li:share:7457345908465340417
+📱 Alejandro notificado por WhatsApp
+/Users/jorgevega/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+2026-05-07 10:30:12,267 HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-07 10:30:16,470 Post publicado para https://pcyredes.com/blog/espana-hub-tecnologia-startups-2026: urn:li:share:7458070687447089152
+=== PCyRedes LinkedIn Bot ===
+
+Nuevo post: Espana hub tecnologia startups 2026
+URL: https://pcyredes.com/blog/espana-hub-tecnologia-startups-2026
+
+Para 2026, España será el tercer hub tecnológico más importante de Europa en captación de startups.
+
+Esto no es casualidad. Es el resultado de una combinación de factores que muchas pymes todavía no están aprovechando.
+
+Lo que está cambiando en el ecosistema tech español:
+
+→ La inversión en infraestructura digital se ha convertido en requisito para atraer talento y socios tecnológicos, no solo en diferencial competitivo.
+
+→ Las pymes que modernizan su red y seguridad IT ahora tienen acceso a colaborar con startups y corporaciones que antes solo miraban a grandes empresas.
+
+→ Barcelona y Madrid lideran, pero el crecimiento real está llegando a empresas medianas que han apostado por digitalizar sus operaciones desde dentro.
+
+→ Tener una infraestructura IT estable y segura ya no es un gasto: es el billete de entrada al ecosistema tecnológico que viene.
+
+El ecosistema cambia rápido. La pregunta relevante no es si tu empresa quiere ser parte de él, sino si su infraestructura tecnológica está preparada para cuando llamen a la puerta.
+
+¿Tu empresa está aprovechando el momento tecnológico que vive España o todavía lo observa desde fuera?
+
+#TransformaciónDigital #InfraestructuraIT #PymesEspaña #TecnologíaEmpresarial
+
+🔗 pcyredes.com
+
+✓ Publicado: urn:li:share:7458070687447089152
+📱 Alejandro notificado por WhatsApp
+/Users/jorgevega/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+2026-05-09 10:30:10,742 HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-09 10:30:14,596 Post publicado para https://pcyredes.com/blog/ciberseguridad-pymes-sonicwall-2026: urn:li:share:7458795455158661121
+=== PCyRedes LinkedIn Bot ===
+
+Nuevo post: Ciberseguridad pymes sonicwall 2026
+URL: https://pcyredes.com/blog/ciberseguridad-pymes-sonicwall-2026
+
+El 68% de los ciberataques en 2025 tuvieron como objetivo empresas de menos de 250 empleados.
+
+Las pymes siguen siendo el blanco más frecuente, precisamente porque muchas asumen que "no son suficientemente grandes para que las ataquen". Ese error tiene un coste medio de 35.000€ por incidente.
+
+De cara a 2026, hay cuatro prioridades que todo responsable IT debería revisar ya:
+
+→ **Segmentación de red**: separar los dispositivos críticos del resto reduce drásticamente el impacto de una brecha.
+
+→ **Protección en el perímetro**: un firewall actualizado con inspección profunda de paquetes (como los de la gama SonicWall) no es un lujo, es la primera línea real de defensa.
+
+→ **Autenticación multifactor en todos los accesos remotos**: el teletrabajo sigue siendo la puerta de entrada más explotada.
+
+→ **Plan de respuesta ante incidentes**: no es suficiente con protegerse, hay que saber qué hacer cuando algo falla.
+
+La seguridad no es un proyecto puntual. Es una capa que se construye y se mantiene.
+
+¿Tu empresa tiene revisada la estrategia de seguridad para el próximo año?
+
+#Ciberseguridad #SeguridadIT #PymesDigitales #SonicWall
+
+🔗 pcyredes.com
+
+✓ Publicado: urn:li:share:7458795455158661121
+📱 Alejandro notificado por WhatsApp
+/Users/jorgevega/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+2026-05-10 10:30:03,971 HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+=== PCyRedes LinkedIn Bot ===
+
+Nuevo post: Ventajas servidor nube escalabilidad pymes 2026
+URL: https://pcyredes.com/blog/ventajas-servidor-nube-escalabilidad-pymes-2026
+
+Traceback (most recent call last):
+  File "/Users/jorgevega/automatizaciones/pcyredes-linkedin/main.py", line 51, in <module>
+    run()
+  File "/Users/jorgevega/automatizaciones/pcyredes-linkedin/main.py", line 39, in run
+    linkedin_text = generate_linkedin_post(post["title"], post["excerpt"])
+  File "/Users/jorgevega/automatizaciones/pcyredes-linkedin/claude_writer.py", line 34, in generate_linkedin_post
+    message = client.messages.create(
+  File "/Users/jorgevega/Library/Python/3.9/lib/python/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/jorgevega/Library/Python/3.9/lib/python/site-packages/anthropic/resources/messages/messages.py", line 996, in create
+    return self._post(
+  File "/Users/jorgevega/Library/Python/3.9/lib/python/site-packages/anthropic/_base_client.py", line 1364, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/Users/jorgevega/Library/Python/3.9/lib/python/site-packages/anthropic/_base_client.py", line 1137, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CataJBgipMvKAL9zxkrSo'}
+/Users/jorgevega/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+2026-05-13 10:30:11,775 HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-13 10:30:14,927 Post publicado para https://pcyredes.com/blog/politicas-internas-it-empresa-2026: urn:li:share:7460245008235921408
+=== PCyRedes LinkedIn Bot ===
+
+Nuevo post: Politicas internas it empresa 2026
+URL: https://pcyredes.com/blog/politicas-internas-it-empresa-2026
+
+La mayoría de empresas trabajan con políticas IT del 2019 en un entorno de 2025.
+
+El teletrabajo, los dispositivos personales y el cloud han cambiado por completo cómo fluye la información en una empresa. Pero las normas internas muchas veces no han evolucionado al mismo ritmo.
+
+De cara a 2026, hay cuatro aspectos que toda política IT debería contemplar:
+
+→ **Gestión de accesos y privilegios mínimos.** Cada usuario solo debe acceder a lo que necesita para su función. Ni más, ni menos.
+
+→ **Política clara para dispositivos personales (BYOD).** Si los empleados usan su móvil o portátil para trabajar, la empresa necesita normas escritas al respecto.
+
+→ **Protocolo ante incidentes de seguridad.** ¿Sabe tu equipo qué hacer si reciben un email sospechoso o detectan un acceso extraño?
+
+→ **Revisión periódica de usuarios activos.** Empleados que ya no están en la empresa siguen teniendo acceso activo en muchos sistemas. Es más común de lo que parece.
+
+Una política IT bien definida no es burocracia. Es la base para que el negocio funcione con menos riesgos y más orden.
+
+¿Cuándo fue la última vez que revisasteis las políticas IT de vuestra empresa?
+
+#SeguridadInformática #GestiónIT #TransformaciónDigital #PymesEspaña
+
+🔗 pcyredes.com
+
+✓ Publicado: urn:li:share:7460245008235921408
+📱 Alejandro notificado por WhatsApp
+/Users/jorgevega/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+2026-05-14 10:30:12,002 HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-14 10:30:16,051 Post publicado para https://pcyredes.com/blog/como-saber-empresa-necesita-responsable-informatico-externo: urn:li:share:7460607400631451652
+=== PCyRedes LinkedIn Bot ===
+
+Nuevo post: Como saber empresa necesita responsable informatico externo
+URL: https://pcyredes.com/blog/como-saber-empresa-necesita-responsable-informatico-externo
+
+Muchas pymes tienen informática… pero nadie que realmente la gestione.
+
+Hay una diferencia enorme entre "tener alguien que arregla el ordenador cuando falla" y tener un responsable IT que proteja y haga crecer tu negocio.
+
+Estas señales indican que necesitas un responsable informático externo:
+
+→ Los problemas técnicos los resuelves llamando a quien puedas, sin un criterio claro ni seguimiento posterior
+
+→ No sabes con exactitud qué datos tienes, dónde están almacenados ni quién tiene acceso a ellos
+
+→ Tu empresa ha crecido pero tu infraestructura IT sigue siendo la misma de hace cinco años
+
+→ Cumplir con el RGPD o responder ante una auditoría de seguridad te generaría un problema real hoy mismo
+
+Un responsable IT externo no es un gasto. Es la persona que evita que un fallo técnico o un ciberataque pare tu negocio durante días.
+
+Y en pymes, ese tipo de parada puede ser muy difícil de recuperar.
+
+¿Tienes claro quién es el responsable de la tecnología en tu empresa?
+
+#SoporteIT #SeguridadInformática #GestiónIT #TransformaciónDigital
+
+🔗 pcyredes.com
+
+✓ Publicado: urn:li:share:7460607400631451652
+📱 Alejandro notificado por WhatsApp
