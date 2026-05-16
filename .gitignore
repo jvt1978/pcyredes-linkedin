@@ -1,5 +1,6 @@
 .env
-published.json
 __pycache__/
 *.pyc
 token.json
+marketing.log
+post_image.jpg
