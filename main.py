@@ -1,11 +1,13 @@
 import os
 import logging
+import requests
+import anthropic
 from dotenv import load_dotenv
 from rss_checker import get_new_posts, mark_as_published
 from claude_writer import generate_linkedin_post, generate_standalone_post
 from linkedin_poster import post_to_linkedin
 from image_creator import create_post_image
-from notifier import notify_ceo
+from notifier import notify_ceo, notify_error
 
 load_dotenv(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env"), override=True)
 
@@ -48,4 +50,22 @@ def run():
     notify_ceo(post["title"], post["link"], linkedin_id)
 
 if __name__ == "__main__":
-    run()
+    try:
+        run()
+    except requests.exceptions.HTTPError as e:
+        if e.response is not None and e.response.status_code == 401:
+            logging.error("LinkedIn token caducado (401)")
+            notify_error("linkedin_token")
+        else:
+            logging.error(f"HTTP error: {e}")
+            notify_error("generic", str(e))
+    except anthropic.BadRequestError as e:
+        if "credit balance" in str(e):
+            logging.error("Anthropic sin créditos (400)")
+            notify_error("anthropic_credits")
+        else:
+            logging.error(f"Anthropic error: {e}")
+            notify_error("generic", str(e))
+    except Exception as e:
+        logging.error(f"Error inesperado: {e}")
+        notify_error("generic", str(e))
