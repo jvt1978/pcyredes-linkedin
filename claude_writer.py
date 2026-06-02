@@ -1,11 +1,28 @@
 import anthropic
 import os
 import random
+import time
 from dotenv import load_dotenv
 
 load_dotenv(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env"), override=True)
 
 client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
+
+def _call_claude(model, max_tokens, system, messages, retries=3, delay=30):
+    for attempt in range(retries):
+        try:
+            return client.messages.create(
+                model=model,
+                max_tokens=max_tokens,
+                system=system,
+                messages=messages
+            )
+        except anthropic.APIStatusError as e:
+            if e.status_code == 529 and attempt < retries - 1:
+                print(f"⚠️ Anthropic sobrecargado (529). Reintento {attempt+1}/{retries-1} en {delay}s...")
+                time.sleep(delay)
+            else:
+                raise
 
 SYSTEM_PROMPT = """Eres el community manager de PCyRedes, empresa de soporte IT y redes en Barcelona (www.pcyredes.com).
 Escribes posts para LinkedIn dirigidos a responsables de empresa y directores IT de pymes en España.
@@ -31,7 +48,7 @@ _BLOG_TOPICS = [
 ]
 
 def generate_linkedin_post(title: str, excerpt: str) -> str:
-    message = client.messages.create(
+    message = _call_claude(
         model="claude-sonnet-4-6",
         max_tokens=500,
         system=SYSTEM_PROMPT,
@@ -56,7 +73,7 @@ def generate_linkedin_post(title: str, excerpt: str) -> str:
 
 def generate_standalone_post() -> str:
     topic = random.choice(_BLOG_TOPICS)
-    message = client.messages.create(
+    message = _call_claude(
         model="claude-sonnet-4-6",
         max_tokens=500,
         system=SYSTEM_PROMPT,
