@@ -4,7 +4,7 @@ import requests
 import anthropic
 from dotenv import load_dotenv
 from rss_checker import get_new_posts, mark_as_published
-from claude_writer import generate_linkedin_post, generate_standalone_post
+from claude_writer import generate_ideas, ceo_pick, write_post, register_post
 from linkedin_poster import post_to_linkedin
 from image_creator import create_post_image
 from notifier import notify_ceo, notify_error
@@ -20,34 +20,35 @@ logging.basicConfig(
 
 def run():
     print("=== PCyRedes LinkedIn Bot ===\n")
-    new_posts = get_new_posts()
+    try:
+        blog_articles = get_new_posts()
+    except Exception as e:
+        logging.warning(f"No se pudo leer el sitemap del blog: {e}")
+        blog_articles = []
 
-    if not new_posts:
-        print("No hay posts nuevos. Generando post educativo de temática IT...\n")
-        linkedin_text = generate_standalone_post()
-        print(linkedin_text)
-        image_path = create_post_image(linkedin_text[:80])
-        result = post_to_linkedin(linkedin_text, image_path)
-        linkedin_id = result.get('id', 'OK')
-        print(f"\n✓ Publicado: {linkedin_id}")
-        logging.info(f"Standalone post publicado: {linkedin_id}")
-        notify_ceo("Post educativo IT", "pcyredes.com", linkedin_id)
-        return
+    # 1. Tres ideas nuevas (los artículos nuevos del blog entran como candidatos)
+    ideas = generate_ideas(3, blog_articles)
+    for i, idea in enumerate(ideas, 1):
+        print(f"Idea {i}: {idea['topic']} | {idea['angle']}")
 
-    post = new_posts[0]
-    print(f"Nuevo post: {post['title']}")
-    print(f"URL: {post['link']}\n")
+    # 2. El CEO elige
+    chosen = ceo_pick(ideas)
+    print(f"\nAlejandro elige: {chosen['topic']} ({chosen.get('ceo_reason', '')})\n")
 
-    linkedin_text = generate_linkedin_post(post["title"], post["excerpt"])
-    print(linkedin_text)
+    # 3. Redacción con tono alterno
+    linkedin_text, tone = write_post(chosen["topic"], chosen["angle"], source_url=chosen.get("source", ""))
+    print(f"[tono: {tone}]\n{linkedin_text}")
 
-    image_path = create_post_image(post["title"])
+    # 4. Publicar y registrar
+    image_path = create_post_image(chosen["topic"])
     result = post_to_linkedin(linkedin_text, image_path)
-    mark_as_published(post["link"])
     linkedin_id = result.get('id', 'OK')
+    register_post(chosen["topic"], tone, linkedin_id)
+    if chosen.get("source"):
+        mark_as_published(chosen["source"])
     print(f"\n✓ Publicado: {linkedin_id}")
-    logging.info(f"Post publicado para {post['link']}: {linkedin_id}")
-    notify_ceo(post["title"], post["link"], linkedin_id)
+    logging.info(f"Post publicado [{tone}] '{chosen['topic']}': {linkedin_id}")
+    notify_ceo(f"{chosen['topic']} (tono {tone})", chosen.get("source") or "pcyredes.com", linkedin_id)
 
 if __name__ == "__main__":
     try:
